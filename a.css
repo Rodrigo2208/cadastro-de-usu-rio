@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'Pixel';
+    src: url('fontes/OTF/dogicabold.otf') format('opentype'), url('fontes/TTF/dogicabold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'mine';
+    src: url(fontes/Minecraftia-Regular.ttf) format('opentype'), url('fontes/TTF/dogicabold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+p {
+    color: black;
+    font-family: mine;
+    font-size: 1.5em;
+}
+a {
+    color: black;
+}
+svg {
+    color: black;
+}

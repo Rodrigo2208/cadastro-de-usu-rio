@@ -2,7 +2,7 @@
 
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-image: linear-gradient(to right, #04BFBF, #026873);
+    background-image: linear-gradient(to right, #000000, #e9e9e9);
     margin: 0;
     padding: 0;
     display: flex;
@@ -12,7 +12,7 @@ body {
     height: 100%;
 }
 .container {
-    background-image: linear-gradient(to right ,#27cc43, #bdffc0);
+    background-image: linear-gradient(to right ,#000000, #464646);
     padding: 40px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -24,11 +24,17 @@ body {
 h2 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin-bottom: 20px;
-    color: #051d03;
+    color: #ffffff;
     text-align: center;
     font-size: 2em;
 }
+
+h3{
+    color: white;
+}
+
 label {
+    color: white;
     display: block;
     margin-bottom: 8px;
     font-weight: bold;
@@ -43,7 +49,7 @@ input {
 button {
     width: 100%;
     padding: 10px;
-    background-image: linear-gradient(to right ,#225500, #225500);
+    background-image: linear-gradient(to right ,#302f31, #000000);
     color: white;
     border: none;
     border-radius: 4px;
@@ -56,7 +62,7 @@ button:hover {
 .user-list {
     width: 100%;
     max-width: 600px;
-    background-image: linear-gradient(to right ,#27cc43, #bdffc0);
+    background-image: linear-gradient(to right ,#272627, #535353);
     border-radius: 8px;
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -81,7 +87,7 @@ button:hover {
     gap: 5px;
 }
 .edit-btn {
-    background-image: linear-gradient(to right, #c7bb18, #c7bb18);
+    background-image: linear-gradient(to right, #05bd14 10px, #87ff91);
     border: none;
     color: white;
     padding: 4px;
@@ -89,11 +95,14 @@ button:hover {
     cursor: pointer;
 }
 .delete-btn {
-    background-image: linear-gradient(to right, #9e1111, #9e1111);
+    background-image: linear-gradient(to right, #9e1111, #ff4747);
     border: none;
     color: white;
     padding: 5px;
     border-radius: 4px;
     cursor: pointer;
+}
+a {
+    color: white;
 }
 
