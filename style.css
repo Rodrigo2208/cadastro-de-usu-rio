@@ -56,9 +56,6 @@ button {
     cursor: pointer;
     font-size: 16px;
 }
-button:hover {
-    background-color: #45a049;
-}
 .user-list {
     width: 100%;
     max-width: 600px;
@@ -103,6 +100,30 @@ button:hover {
     cursor: pointer;
 }
 a {
+    text-decoration: none;
     color: white;
 }
 
+.cadastro:hover {
+    background-image: linear-gradient(to right, #000000, #302f31);
+}
+
+.cadastro:active {
+    background-image: linear-gradient(to right, #302f31, #000000);
+}
+
+.edit-btn:hover {
+    background-image: linear-gradient(to right, #87ff91 10px, #05bd14);
+}
+
+.delete-btn:hover {
+    background-image: linear-gradient(to right, #ff4747, #9e1111);
+}
+
+.delete-btn:active {
+    background-image: linear-gradient(to right, #9e1111, #ff4747);
+}
+
+.edit-btn:active {
+    background-image: linear-gradient(to right, #05bd14, #87ff91);
+}
