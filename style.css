@@ -11,6 +11,7 @@ body {
     min-height: 100vh;
     height: 100%;
 }
+
 .container {
     background-image: linear-gradient(to right ,#000000, #464646);
     padding: 40px;
@@ -21,6 +22,7 @@ body {
     margin-bottom: 20px;
     margin-top: 23px;
 }
+
 h2 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin-bottom: 20px;
@@ -39,6 +41,7 @@ label {
     margin-bottom: 8px;
     font-weight: bold;
 }
+
 input {
     width: 94.5%;
     padding: 10px;
@@ -46,6 +49,7 @@ input {
     border: 1px solid #ccc;
     border-radius: 4px;
 }
+
 button {
     width: 100%;
     padding: 10px;
@@ -56,7 +60,8 @@ button {
     cursor: pointer;
     font-size: 16px;
 }
-.user-list {
+
+.product-list {
     width: 100%;
     max-width: 600px;
     background-image: linear-gradient(to right ,#272627, #535353);
@@ -64,25 +69,30 @@ button {
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-.user-list h3 {
+
+.product-list h3 {
     text-align: center;
     margin-bottom: 10px;
 }
-.user-list table {
+
+.product-list table {
     width: 100%;
     border-collapse: collapse;
 }
-.user-list table th, .user-list table td {
+
+.product-list table th, .product-list table td {
     
     background-color: white;
     border: 1px solid #ccc;
     padding: 10px;
     text-align: left;
 }
+
 .actions {
     display: flex;
     gap: 5px;
 }
+
 .edit-btn {
     background-image: linear-gradient(to right, #05bd14 10px, #87ff91);
     border: none;
@@ -91,6 +101,7 @@ button {
     border-radius: 4px;
     cursor: pointer;
 }
+
 .delete-btn {
     background-image: linear-gradient(to right, #9e1111, #ff4747);
     border: none;
@@ -99,6 +110,7 @@ button {
     border-radius: 4px;
     cursor: pointer;
 }
+
 a {
     text-decoration: none;
     color: white;
@@ -126,4 +138,22 @@ a {
 
 .edit-btn:active {
     background-image: linear-gradient(to right, #05bd14, #87ff91);
+}
+
+form {
+display: flex;
+flex-direction: column;
+gap: 1em;
+}
+
+input, textarea {
+padding: 0.5em;
+font-size: 1em;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+
+textarea {
+height: 100px;
+resize: vertical;
 }
