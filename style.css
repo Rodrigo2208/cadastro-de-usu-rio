@@ -29,6 +29,7 @@ h2 {
     color: #ffffff;
     text-align: center;
     font-size: 2em;
+    text-shadow: 2px 2px 5px #ffffffcc;
 }
 
 h3{
@@ -78,12 +79,13 @@ button {
 .product-list table {
     width: 100%;
     border-collapse: collapse;
+    
 }
 
 .product-list table th, .product-list table td {
     
     background-color: white;
-    border: 1px solid #ccc;
+    border: 1px solid #777777;
     padding: 10px;
     text-align: left;
 }

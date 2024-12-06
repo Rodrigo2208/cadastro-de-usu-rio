@@ -112,13 +112,34 @@ function handleEdit(row) {
 }
 
 // Função para excluir um item
-function handleDelete(row) {
-  if (confirm('Tem certeza que deseja excluir este produto?')) {
-    const id = row.dataset.id;
-    removeProductFromStorage(id);
-    productTableBody.removeChild(row);
-  }
+  function handleDelete(row) {
+
+  // SweetAlert2 para confirmação de exclusão
+  Swal.fire({
+    title: 'Você tem certeza?',
+    text: 'Este produto será removido da lista.',
+    icon: 'warning',
+    showCancelButton: true,
+    confirmButtonColor: '#d33',
+    cancelButtonColor: '#3085d6',
+    confirmButtonText: 'Sim, excluir!',
+    cancelButtonText: 'Cancelar',
+  }).then((result) => {
+    if (result.isConfirmed) {
+      // Remove o produto do localStorage e da tabela
+      removeProductFromStorage(id);
+      productTableBody.removeChild(row);
+
+      // Exibe um alerta de sucesso
+      Swal.fire(
+        'Excluído!',
+        'O produto foi removido com sucesso.',
+        'success'
+      );
+    }
+  });
 }
+
 
 // Funções de LocalStorage
 function getProductsFromStorage() {
